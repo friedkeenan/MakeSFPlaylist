@@ -69,5 +69,8 @@ for v in vids:
                                   }
                                 }
                               ).execute()
+    else:
+      print("Something went wrong")
+      break
   finally:
     print("Added "+str(vids.index(v)+1)+"/"+str(len(vids))+": "+v["snippet"]["title"])
